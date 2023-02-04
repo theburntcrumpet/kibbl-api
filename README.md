@@ -1,5 +1,7 @@
 # Kibbl Service
 
+![Docker Build Status](https://github.com/theburntcrumpet/kibbl-api/actions/workflows/docker-image.yml/badge.svg)
+
 This service provides an API which uses bloom filters to quickly search contents of markdown files.
 
 ## Kibbl - Design
