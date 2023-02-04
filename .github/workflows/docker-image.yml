@@ -22,7 +22,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           
       - name: Build the docker image
-        run: docker build -t funbuns/kibbl-api:$(date +'%Y-%m-%d') -t funbuns/kibbl-api:latest.
+        run: docker build -t funbuns/kibbl-api:$(date +'%Y-%m-%d') .
+      
+      - name: Tag with latest
+        run: docker tag funbuns/kibbl-api:$(date +'%Y-%m-%d') funbuns/kibbl-api:latest
       
       - name: Push the docker image
         run: docker image push -a funbuns/kibbl-api
