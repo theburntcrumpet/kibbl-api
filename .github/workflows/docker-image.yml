@@ -30,4 +30,4 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.date.outputs.date }}
-          labels: "kibbl-api"
+          labels: "funbuns/kibbl-api"
