@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  api:
+    image: kibbl-api:0.1
+    ports:
+      - "8000:5000"
+    volumes:
+      - ~:/app/notes
