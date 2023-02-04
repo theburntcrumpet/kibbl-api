@@ -27,6 +27,7 @@ def get_note():
         response.mimetype = "text/plain"
         return response
 
+
 def index_notes_job():
     global notes
     start = time.time()
