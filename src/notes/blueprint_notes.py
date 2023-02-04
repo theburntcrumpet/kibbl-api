@@ -3,8 +3,9 @@ from .cache_service import search_notes, index_notes
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
+import os
 
-BASE_DIRECTORY = "/app/notes"
+BASE_DIRECTORY = os.getenv("NOTES_PATH", "/app/notes")
 
 # define the blueprint
 blueprint_notes = Blueprint(name="blueprint_notes", import_name=__name__)
