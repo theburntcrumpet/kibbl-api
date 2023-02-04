@@ -1,5 +1,4 @@
-from flask import Flask, jsonify
-import sys
+from flask import Flask
 from .notes.blueprint_notes import blueprint_notes
 
 app = Flask(__name__)
