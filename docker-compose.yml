@@ -5,4 +5,4 @@ services:
     ports:
       - "8000:5000"
     volumes:
-      - ~:/app/notes
+      - /mnt/c/Users/Matthew/Documents/Notes:/app/notes
