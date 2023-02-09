@@ -44,7 +44,7 @@ def search_notes(query, notes):
     filename_matches = []
     content_matches = []
     for note in notes:
-        if qs in note["file"]:
+        if qs in note["file"].lower():
             filename_matches.append(note)
             continue
 
